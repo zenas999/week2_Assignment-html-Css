@@ -16,7 +16,7 @@ body {
       rgba(0, 0, 0, 0.55),
       rgba(0, 0, 0, 0.55)
     ),
-    url("/img/imgd1.jpg") center / cover no-repeat;
+    url("imgd1.jpg") center / cover no-repeat;
   color: #fff;
   text-align: center;
   padding: 90px 20px;
