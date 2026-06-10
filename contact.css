@@ -31,7 +31,7 @@ header p{
 }
 
 .contact-info{
-  background: url("/img/imgc.jpg") no-repeat center;
+  background: url("imgc.jpg") no-repeat center;
   background-size: cover;
   color: #fff;
   display: flex;
