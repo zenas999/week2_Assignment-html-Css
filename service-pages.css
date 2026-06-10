@@ -1,0 +1,167 @@
+/* ===== GLOBAL RESET ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #00324d;
+  line-height: 1.6;
+  background: #f4f6f8;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.55),
+      rgba(0, 0, 0, 0.55)
+    ),
+    url("/img/imgd1.jpg") center / cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 90px 20px;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  opacity: 0.95;
+}
+
+/* ===== MAIN CONTENT ===== */
+.service-content,
+.why-us {
+  max-width: 950px;
+  margin: 50px auto;
+  padding: 0 20px;
+  text-align: center;
+  animation: slideUp 1s ease;
+}
+
+.service-content h2,
+.why-us h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #00324d;
+}
+
+.service-content p,
+.why-us p {
+  font-size: 1rem;
+  max-width: 750px;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+
+/* ===== FEATURES GRID ===== */
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-top: 35px;
+}
+
+.feature {
+  background: #fff;
+  padding: 18px 24px;
+  min-width: 220px;
+  border-radius: 12px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+  cursor: default;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Animation */
+.feature:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== CTA SECTION ===== */
+.cta {
+  text-align: center;
+  margin: 60px 0;
+}
+
+.cta-btn {
+  display: inline-block;
+  background: #00324d;
+  color: #fff;
+  padding: 15px 32px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  transition: all 0.35s ease;
+}
+
+/* CTA Hover */
+.cta-btn:hover {
+  background: gold;
+  color: #00324d;
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
+
+/* ===== RESPONSIVENESS ===== */
+@media (max-width: 900px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .features {
+    gap: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 70px 15px;
+  }
+
+  .hero h1 {
+    font-size: 2.1rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .feature {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .service-content,
+  .why-us {
+    margin: 35px auto;
+  }
+}
+
+/* ===== KEYFRAMES ===== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
